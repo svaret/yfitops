@@ -1,18 +1,17 @@
-import sqlite3
+import discogs_client
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
-def get_db_connection():
-  conn = sqlite3.connect('database.db')
-  conn.row_factory = sqlite3.Row
-  return conn
-
 @app.route('/')
 def index():
-  conn = get_db_connection()
-  posts = conn.execute('SELECT * from posts').fetchall()
-  conn.close
-  return render_template('index.html', posts=posts)
-  return render_template('index.html')
-
+  d = discogs_client.Client('ExampleApplication/0.1',
+                            user_token="AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD")
+  results = d.search(artist='Heptones', type='master', format='LP')
+  first = results.page(1)[0]
+  image = first.images[0]
+  albums = results.page(1)
+  uris = []
+  for a in albums:
+    uris.append(a.images[0]['uri'])
+  return render_template('index.html', posts=uris)
