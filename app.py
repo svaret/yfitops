@@ -11,14 +11,13 @@ def index():
                               user_token="AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD")
     results = d.search(artist='Heptones', type='master', format='LP')
     albums = results.page(1)
-    return render_template('index.html', uri=albums[0].images[0]['uri'])
+    return render_template('index.html', uri=albums[1].images[1]['uri'])
 
 
 @app.route('/curl')
 def curl():
     response = requests.get(
-        'https://api.discogs.com/database/search?artist=Heptones&format=LP&type=master',
-        headers={'Authorization: Discogs token=AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'}
+        'https://api.discogs.com/releases/3721310',
+        headers={'Authorization': 'Discogs token=AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'}
     )
-    print('ajajajaja')
-    return "Hej"
+    return render_template('index.html', uri=[image["uri"] for image in response.json()['images'] if image["type"] == "primary"][0])
