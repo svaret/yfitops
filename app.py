@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/discogs-client')
 def index():
     d = discogs_client.Client('ExampleApplication/0.1',
                               user_token="AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD")
@@ -16,15 +16,15 @@ def index():
     return render_template('index.html', uri=albums[1].images[1]['uri'])
 
 
-@app.route('/artist')
+@app.route('/')
 def artist():
     response = requests.get(
-        'https://api.discogs.com/database/search?artist=' + request.args.get('name') + '&type=master&format=LP',
+        'https://api.discogs.com/database/search?artist=' + request.args.get('artist') + '&type=master&format=LP',
         headers={'Authorization': 'Discogs token=AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'}
     )
     ix = randrange(len(response.json()['results']))
-    return render_template('index.html',
-                           uri=response.json()['results'][ix]['cover_image'])
+    image_uri = response.json()['results'][ix]['cover_image']
+    return render_template('index.html', uri=image_uri)
 
 
 @app.route('/curl')
