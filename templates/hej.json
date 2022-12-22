@@ -1,0 +1,1265 @@
+{
+  'pagination': {
+    'page': 1,
+    'pages': 1,
+    'per_page': 50,
+    'items': 31,
+    'urls': {}
+  },
+  'results': [
+    {
+      'country': 'France',
+      'year': '1979',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Greensleeves Records'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 355800,
+      'barcode': [
+        'SACEM/SACD/SDRM/SGDL',
+        'BA 242'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': True
+      },
+      'master_id': 355800,
+      'master_url': 'https://api.discogs.com/masters/355800',
+      'uri': '/The-Heptones-Good-Life/master/355800',
+      'catno': '940 814',
+      'title': 'The Heptones - Good Life',
+      'thumb': 'https://img.discogs.com/loWf9yT2sE9g9BGlddRFDAFEsJE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3010987-1311609015.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/UQMb3mhh3MEb1khn4OK2JYg8Ejg=/fit-in/320x320/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3010987-1311609015.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/355800',
+      'community': {
+        'want': 276,
+        'have': 708
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1976',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Island Records',
+        'Island Records Inc.',
+        'Robor Ltd.'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 195139,
+      'barcode': [
+        'ILPS-9381-A1-1A-SM KENDUM B A S2',
+        'ILPS-9381-B-1ASM KENDUM B B S1',
+        '11 ILPS-9381-A KENDUM A EG',
+        '9 ILPS-9381-B KENDUM B EG'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 195139,
+      'master_url': 'https://api.discogs.com/masters/195139',
+      'uri': '/master/195139-The-Heptones-Night-Food',
+      'catno': 'ILPS-9381',
+      'title': 'The Heptones - Night Food',
+      'thumb': 'https://img.discogs.com/PstZMO3QuH73ZK89b1OABze8ZtA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5150087-1395390972-1183.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/LLSd_jddxZ1aDzAg6UaQDEF4K4E=/fit-in/597x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5150087-1395390972-1183.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/195139',
+      'community': {
+        'want': 1653,
+        'have': 1960
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation',
+        'Misprint'
+      ],
+      'style': [
+        'Reggae'
+      ],
+      'id': 1091032,
+      'label': [
+        'Trench Town',
+        'Studio One',
+        'Treasure Isle Recording Studio',
+        'Channel One Recording Studio',
+        'Dynamic Sounds Studios'
+      ],
+      'type': 'master',
+      'barcode': [
+        'TT-0042-A1 *  MA',
+        'TT-0042-B1 *  MA'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1091032,
+      'master_url': 'https://api.discogs.com/masters/1091032',
+      'uri': '/The-Heptones-Legends-From-Studio-One/master/1091032',
+      'catno': 'TTLP 0042',
+      'title': 'The Heptones - Legends From Studio One',
+      'thumb': 'https://img.discogs.com/w-uov_ycuuZIWG1r6oaJzwMmpy4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-694598-1322787193.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/1eLxAopRYAtunk_QTt7_CHT4AlM=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-694598-1322787193.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1091032',
+      'community': {
+        'want': 58,
+        'have': 128
+      }
+    },
+    {
+      'country': 'US',
+      'year': '1982',
+      'format': [
+        'Vinyl',
+        'LP'
+      ],
+      'label': [
+        'Shanachie',
+        'Channel One Recording Studio',
+        'Tuff Gong Recording Studio',
+        'Sound Technique',
+        'Europadisk'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 443269,
+      'barcode': [
+        'SH-43008 A Soc 9-82 409-11⸱2 [EDP logo]',
+        'SH-43008 B Soc 9-82 409-11⸱1 [EDP logo]'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 443269,
+      'master_url': 'https://api.discogs.com/masters/443269',
+      'uri': '/The-Heptones-On-The-Run/master/443269',
+      'catno': '43008',
+      'title': 'The Heptones - On The Run',
+      'thumb': 'https://img.discogs.com/r9fVib2zEArY1Td7CW-ZUMLlvuo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1976655-1390697900-8439.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/QH-A-bp955saJ59sjkQG4WxlhJ8=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1976655-1390697900-8439.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/443269',
+      'community': {
+        'want': 176,
+        'have': 339
+      }
+    },
+    {
+      'country': 'Europe',
+      'year': '1985',
+      'format': [
+        'Vinyl',
+        'LP'
+      ],
+      'label': [
+        'Burning Sounds',
+        'Tuff Gong Recording Studio',
+        "Harry J's Recording Studio",
+        "Harry J's Recording Studio"
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae',
+        'Lovers Rock'
+      ],
+      'id': 786746,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 786746,
+      'master_url': 'https://api.discogs.com/masters/786746',
+      'uri': '/The-Heptones-Swing-Low/master/786746',
+      'catno': 'BS 1064',
+      'title': 'The Heptones - Swing Low',
+      'thumb': 'https://img.discogs.com/JBeAwiIVnF2MjSvZ1_jQXO5e2eE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6507967-1423578193-6601.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/fm77t9aCAf6my4DKKH-dh5YHvS0=/fit-in/366x364/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6507967-1423578193-6601.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/786746',
+      'community': {
+        'want': 103,
+        'have': 347
+      }
+    },
+    {
+      'country': 'US',
+      'year': '1987',
+      'format': [
+        'Vinyl',
+        'LP'
+      ],
+      'label': [
+        'Moving Target'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae',
+        'Dancehall',
+        'Lovers Rock'
+      ],
+      'id': 1064977,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1064977,
+      'master_url': 'https://api.discogs.com/masters/1064977',
+      'uri': '/The-Heptones-A-Place-Called-Love/master/1064977',
+      'catno': 'MT 015',
+      'title': 'The Heptones - A Place Called Love',
+      'thumb': 'https://img.discogs.com/ny831Ihlo7-UfKuoM_DRN2EwJbg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2472754-1287641965.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/1NoDu0iuuEkrlv-FfFt8jlQGcSw=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2472754-1287641965.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1064977',
+      'community': {
+        'want': 58,
+        'have': 77
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1976',
+      'format': [
+        'Vinyl',
+        'LP'
+      ],
+      'label': [
+        'Trojan Records',
+        "Harry J's Recording Studio"
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Reggae',
+        'Roots Reggae'
+      ],
+      'id': 199809,
+      'barcode': [
+        'TRLS128A-2',
+        'TRLS128B-2'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 199809,
+      'master_url': 'https://api.discogs.com/masters/199809',
+      'uri': '/The-Heptones-Cool-Rasta/master/199809',
+      'catno': 'TRLS 128',
+      'title': 'The Heptones - Cool Rasta',
+      'thumb': 'https://img.discogs.com/umoOSeD-q8QpxwhHrBXqpJRjY4c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-806335-1324112935.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/U-8BO0JYpzEFk1rLq_PYguzmsM4=/fit-in/297x320/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-806335-1324112935.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/199809',
+      'community': {
+        'want': 854,
+        'have': 610
+      }
+    },
+    {
+      'country': 'US',
+      'year': '1986',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Moving Target',
+        'Moving Target Records',
+        'Moving Target Records',
+        'Tuff Gong Recording Studio',
+        "Harry J's Recording Studio",
+        "Harry J's Recording Studio",
+        'Faville Graphics',
+        'Celluloid Records',
+        'Celluloid Records'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 369019,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 369019,
+      'master_url': 'https://api.discogs.com/masters/369019',
+      'uri': '/The-Heptones-Changing-Times/master/369019',
+      'catno': 'MT 006',
+      'title': 'The Heptones - Changing Times',
+      'thumb': 'https://img.discogs.com/BdoUs9w6yrOAtYTQc0GcSvVfHHY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2790655-1377366087-6825.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/affsuaRN9kqmAMKQ1ARuShxFlHI=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2790655-1377366087-6825.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/369019',
+      'community': {
+        'want': 92,
+        'have': 260
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation'
+      ],
+      'style': [
+        'Rocksteady'
+      ],
+      'id': 1084505,
+      'label': [
+        'Trench Town'
+      ],
+      'type': 'master',
+      'barcode': [
+        'TTLP-0044 A-1',
+        'TTLP-0044 AA/'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1084505,
+      'master_url': 'https://api.discogs.com/masters/1084505',
+      'uri': '/The-Heptones-Trench-Town-Experience/master/1084505',
+      'catno': 'TTLP 0044',
+      'title': 'The Heptones - Trench Town Experience',
+      'thumb': 'https://img.discogs.com/qiAPV8IWVOsj0NNrq-SracT4L7A=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2414873-1466085421-6307.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/3DOo6WUfFeqU1W7n0e_vlj4D1nQ=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2414873-1466085421-6307.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1084505',
+      'community': {
+        'want': 43,
+        'have': 82
+      }
+    },
+    {
+      'country': 'US',
+      'year': '1978',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation'
+      ],
+      'label': [
+        'United Artists Records',
+        'Anthology Of Reggae Collectors Series',
+        'United Artists Music And Records Group, Inc.',
+        'United Artists Music And Records Group, Inc.',
+        'United Artists Music And Records Group, Inc.',
+        'Jamaica Recording Studio',
+        'Mediasound',
+        'Kendun Recorders',
+        'Kendun Recorders',
+        'Columbia Records Pressing Plant, Terre Haute',
+        'Shakat Music Publishing',
+        'Jamrec Music',
+        'Kags Music Corp.'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Reggae',
+        'Rocksteady'
+      ],
+      'id': 478716,
+      'barcode': [
+        'T1   UA-LA-805-A-1 TH   KENDUN-A   S A',
+        'T1   UA-LA-805-B-1 TH   KENDUN-A   S A'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 478716,
+      'master_url': 'https://api.discogs.com/masters/478716',
+      'uri': '/The-Heptones-In-Love-With-You/master/478716',
+      'catno': 'UA-LA805-H',
+      'title': 'The Heptones - In Love With You',
+      'thumb': 'https://img.discogs.com/hUBCbn62Mb5Xl6QsHsVW7T6gjBE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-190559-1600800345-4239.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/z9vm1uxjZOvv4x4Li27PJAh3jas=/fit-in/600x594/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-190559-1600800345-4239.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/478716',
+      'community': {
+        'want': 179,
+        'have': 672
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1979',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Jackal Records',
+        'Channel One Recording Studio',
+        'Channel One Recording Studio',
+        'Mojo Distribution',
+        'T.S. Music'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 310291,
+      'barcode': [
+        'JALP 7000 A1 EG ',
+        'JALP 7000 B1 EG',
+        'JALP 7000A',
+        'JALP 7000B'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 310291,
+      'master_url': 'https://api.discogs.com/masters/310291',
+      'uri': '/The-Heptones-King-Of-My-Town/master/310291',
+      'catno': 'JALP 7000',
+      'title': 'The Heptones - King Of My Town',
+      'thumb': 'https://img.discogs.com/UZJD-Bl7BUff1m3TzfT5mLcGTXo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2710294-1297595452.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/QZTtML0UM82sl1quuFDHg2hu2Eg=/fit-in/500x506/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2710294-1297595452.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/310291',
+      'community': {
+        'want': 163,
+        'have': 139
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1998',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation'
+      ],
+      'label': [
+        'Trench Town'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 1003953,
+      'barcode': [
+        'TTLP-0050/3'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1003953,
+      'master_url': 'https://api.discogs.com/masters/1003953',
+      'uri': '/The-Heptones-They-Came-They-Saw-They-Recorded-And-They-Conquered/master/1003953',
+      'catno': 'TTLP 0050',
+      'title': 'The Heptones - They Came, They Saw, They Recorded And They Conquered',
+      'thumb': 'https://img.discogs.com/QRHR7yONhDAQ9ZhiCEotKB2Vxkw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2929696-1371165676-9586.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/GJUkRKXFQ3RGYRtfdt00W5Mo4ZE=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2929696-1371165676-9586.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1003953',
+      'community': {
+        'want': 20,
+        'have': 43
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1973',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Jaywax',
+        'Jay Music Ltd.',
+        "Harry J's Recording Studio",
+        'Jay Music Ltd.',
+        'Jamaica Times (Press) Ltd.'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 930478,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 930478,
+      'master_url': 'https://api.discogs.com/masters/930478',
+      'uri': '/The-Heptones-Book-Of-Rules/master/930478',
+      'catno': 'HJ 112',
+      'title': 'The Heptones - Book Of Rules',
+      'thumb': 'https://img.discogs.com/lsUgQ0IJ1Rpf8wVvNtsOnnJ5CYI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1334430-1298251185.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/kVGTrdVBXex166UAzxz8ZCxR7hg=/fit-in/398x400/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1334430-1298251185.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/930478',
+      'community': {
+        'want': 487,
+        'have': 277
+      }
+    },
+    {
+      'country': 'US',
+      'year': '1995',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'RAS Records Inc.',
+        'Real Authentic Sound'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Reggae',
+        'Rocksteady'
+      ],
+      'id': 150118,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 150118,
+      'master_url': 'https://api.discogs.com/masters/150118',
+      'uri': '/The-Heptones-Pressure/master/150118',
+      'catno': '',
+      'title': 'The Heptones - Pressure!',
+      'thumb': 'https://img.discogs.com/DJEdVLLTnrps8loPQpcFwI5NXxM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1559186-1371166814-1473.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/58MrcGAwi8RSWw0yrAVT3rfVRSg=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1559186-1371166814-1473.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/150118',
+      'community': {
+        'want': 68,
+        'have': 104
+      }
+    },
+    {
+      'country': 'US',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'style': [],
+      'id': 590566,
+      'label': [
+        'Rohit Records',
+        'HC&F Studio',
+        'Rohit International Records'
+      ],
+      'type': 'master',
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 590566,
+      'master_url': 'https://api.discogs.com/masters/590566',
+      'uri': '/The-Heptones-Better-Days/master/590566',
+      'catno': 'RRTG 7715',
+      'title': 'The Heptones - Better Days',
+      'thumb': 'https://img.discogs.com/BLNkx9iRhhly4mbad73_WHDpCfU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4801016-1416261202-8440.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/2u4NfYb9zcFBD0hf54D4oBf9FIk=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4801016-1416261202-8440.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/590566',
+      'community': {
+        'want': 0,
+        'have': 0
+      }
+    },
+    {
+      'country': 'US',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'style': [
+        'Rocksteady'
+      ],
+      'id': 280043,
+      'label': [
+        'Studio One',
+        "Coxsone's Music City",
+        'Jamaica Recording Mfg. Co. Ltd.',
+        'Jamrec Music',
+        'Jamaica Recording Studio'
+      ],
+      'type': 'master',
+      'barcode': [
+        'SOLP-2222-A',
+        'SOLP-2222-B',
+        "SO/220A SOU'l9WAVE",
+        "SO/220B SOU'19WAVE"
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 280043,
+      'master_url': 'https://api.discogs.com/masters/280043',
+      'uri': '/Heptones-Ting-A-Ling/master/280043',
+      'catno': 'SO LP 2222',
+      'title': 'Heptones* - Ting A Ling',
+      'thumb': 'https://img.discogs.com/U701zbK03nXxlXlihEb8gpbEbCs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-945689-1175872216.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/Un1Y19h9jdrRVaiBn9Ol-oPySF8=/fit-in/305x300/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-945689-1175872216.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/280043',
+      'community': {
+        'want': 0,
+        'have': 0
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1977',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Island Records',
+        'Island Records Ltd.',
+        'Island Records Inc.',
+        'Island Records Inc.',
+        'Island Records Ltd.',
+        'Island Records Ltd.',
+        'Robor Ltd.',
+        'The Black Ark',
+        'Blue Mountain Music Ltd.',
+        'B. Feldman & Co. Ltd.',
+        'Island Records Manufacturing Ltd'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 186765,
+      'barcode': [
+        'Ⅰ-8 ILPS 9456 A4 JONZ EG',
+        'Ⅰ-2 ILPS 9456 B4 EG',
+        'Ⅰ-6 ILPS 9456 A4 JONZ EG',
+        'Ⅰ-3 ILPS 9456 B4 EG',
+        'Ⅰ-2 ILPS 9456 A4 JONZ EG',
+        'Ⅰ-1 ILPS 9456 B4 EG',
+        'I-13-ILPS-9456 A4 JONZ EG ',
+        'I-14-ILPS-9456 B4 EG'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': True
+      },
+      'master_id': 186765,
+      'master_url': 'https://api.discogs.com/masters/186765',
+      'uri': '/master/186765-The-Heptones-Party-Time',
+      'catno': 'ILPS 9456',
+      'title': 'The Heptones - Party Time',
+      'thumb': 'https://img.discogs.com/YJZmISlbHGcnqvTC9rwoatA249Q=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2246618-1367518689-2380.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/uLF30ku9WV70pPAq4d606cZebvE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2246618-1367518689-2380.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/186765',
+      'community': {
+        'want': 2464,
+        'have': 1842
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1968',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Studio One'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Rocksteady'
+      ],
+      'id': 238114,
+      'barcode': [
+        'Dodd SO-0016 A  ',
+        'Dodd SO-0016 B '
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 238114,
+      'master_url': 'https://api.discogs.com/masters/238114',
+      'uri': '/master/238114-The-Heptones-On-Top',
+      'catno': '0016',
+      'title': 'The Heptones - On Top',
+      'thumb': 'https://img.discogs.com/kzWT-7ICv54lZH1hpApPloDJj40=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-14382388-1573402328-1886.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/IBRxp4nsmcgZGA9ii6bogmLnHHE=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-14382388-1573402328-1886.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/238114',
+      'community': {
+        'want': 4057,
+        'have': 1513
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1967',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Studio One',
+        'Jamaica Recording Studio',
+        'Island Music',
+        'Jamaica Recording Studio'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Rocksteady'
+      ],
+      'id': 253367,
+      'barcode': [
+        'SOL + MX + 9002 + A',
+        'SOL + MX + 9002 + B'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 253367,
+      'master_url': 'https://api.discogs.com/masters/253367',
+      'uri': '/master/253367-The-Heptones-The-Heptones',
+      'catno': 'SOL 9002',
+      'title': 'The Heptones - The Heptones',
+      'thumb': 'https://img.discogs.com/qkpc2eFhePGpITn66R8BHQlYD5c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4864685-1616672936-9636.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/jRLuq6JNdXRVilEsslWdubY5alA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4864685-1616672936-9636.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/253367',
+      'community': {
+        'want': 1972,
+        'have': 870
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1988',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Clarendon Sound',
+        'Channel One Recording Studio',
+        "Harry J's Recording Studio",
+        'Mark Angelo Studios',
+        'Channel One Recording Studio',
+        'Jetstar'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae',
+        'Lovers Rock'
+      ],
+      'id': 395650,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 395650,
+      'master_url': 'https://api.discogs.com/masters/395650',
+      'uri': '/The-Heptones-The-Heptones-Sings-Good-Vibes/master/395650',
+      'catno': 'CSLP 005',
+      'title': 'The Heptones - The Heptones Sings Good Vibes',
+      'thumb': 'https://img.discogs.com/CIthpNY1YDBUkoIsNaJGaxhrZts=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1291523-1371165897-9797.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/JTm6XNL3jiGzBiN0uywL8_-pDa0=/fit-in/595x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1291523-1371165897-9797.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/395650',
+      'community': {
+        'want': 108,
+        'have': 111
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1996',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation',
+        'White Label'
+      ],
+      'label': [
+        'Trench Town'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [],
+      'id': 863052,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 863052,
+      'master_url': 'https://api.discogs.com/masters/863052',
+      'uri': '/The-Heptones-22-Golden-Hits/master/863052',
+      'catno': 'TTLP 0043',
+      'title': 'The Heptones - 22 Golden Hits',
+      'thumb': 'https://img.discogs.com/WIGoisuW4UPcgwyT5-C9QlmCb38=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3747677-1457994333-7764.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/2ZHoYjsdieofN_GAZGo9XMoI6RI=/fit-in/582x550/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3747677-1457994333-7764.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/863052',
+      'community': {
+        'want': 80,
+        'have': 99
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1999',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation',
+        'Limited Edition'
+      ],
+      'label': [
+        'Trench Town'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Dub'
+      ],
+      'id': 150096,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 150096,
+      'master_url': 'https://api.discogs.com/masters/150096',
+      'uri': '/The-Heptones-Dub-Dictionary/master/150096',
+      'catno': 'TTLP 0052',
+      'title': 'The Heptones - Dub Dictionary',
+      'thumb': 'https://img.discogs.com/vfLEdjSMX71q_egx3k8VYvWhbAw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1627355-1233087138.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/jjRdpbjg83HJ53tuFyN8ZMy7TsI=/fit-in/600x622/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1627355-1233087138.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/150096',
+      'community': {
+        'want': 71,
+        'have': 101
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1983',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Vista Sounds',
+        'Channel One Recording Studio',
+        'Tuff Gong Recording Studio',
+        'Tuff Gong Recording Studio',
+        'Vista Sounds Music'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [],
+      'id': 1724437,
+      'barcode': [
+        'M.C.P.S.'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1724437,
+      'master_url': 'https://api.discogs.com/masters/1724437',
+      'uri': '/The-Heptones-Back-On-Top/master/1724437',
+      'catno': 'VSLP 4018',
+      'title': 'The Heptones - Back On Top',
+      'thumb': 'https://img.discogs.com/gwkbwzbpTD8hfJRcN43Myl12IsM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2710330-1441397368-4647.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/cui-b8l8lmUylJw91S_bjTCfH7s=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2710330-1441397368-4647.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1724437',
+      'community': {
+        'want': 85,
+        'have': 186
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'style': [
+        'Reggae',
+        'Rocksteady'
+      ],
+      'id': 1808268,
+      'label': [
+        'Trench Town',
+        'Jamaica Recording Studio',
+        "Randy's Studio",
+        'Treasure Isle Recording Studio',
+        'Jamaica Recording Studio',
+        "Randy's Studio",
+        'Treasure Isle Recording Studio'
+      ],
+      'type': 'master',
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1808268,
+      'master_url': 'https://api.discogs.com/masters/1808268',
+      'uri': '/The-Heptones-The-Original-Heptones/master/1808268',
+      'catno': 'TTLP 0041',
+      'title': 'The Heptones - The Original Heptones',
+      'thumb': 'https://img.discogs.com/ku8MEFlXqTr_9lFV0D-M_peDiHI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3123277-1600801596-4887.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/dpGOxDPzajLh8c9pBncGcTnM3Qk=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3123277-1600801596-4887.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1808268',
+      'community': {
+        'want': 68,
+        'have': 127
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 840521,
+      'label': [
+        'Trench Town'
+      ],
+      'type': 'master',
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 840521,
+      'master_url': 'https://api.discogs.com/masters/840521',
+      'uri': '/The-Heptones-25-Years-Silver-Jubilee/master/840521',
+      'catno': 'TTLP 0048',
+      'title': 'The Heptones - 25 Years Silver Jubilee',
+      'thumb': 'https://img.discogs.com/-YFo_HPoOgHb9-YPj8FQDQ6LDIQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3173076-1319148103.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/TIEJF3MBbHNsocU5OstRxnlI8_g=/fit-in/594x588/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3173076-1319148103.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/840521',
+      'community': {
+        'want': 19,
+        'have': 13
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1978',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Third World',
+        'Channel One Recording Studio',
+        "Harry J's Recording Studio",
+        "Harry J's Recording Studio",
+        'De Lane Lea Studios',
+        'Rema Reproductions Ltd.'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [],
+      'id': 369018,
+      'barcode': [
+        'TDWD+101  TWS1940+ B  KEV',
+        'KEV TDWD+101  TWS1940+ A'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 369018,
+      'master_url': 'https://api.discogs.com/masters/369018',
+      'uri': '/The-Heptones-Better-Days/master/369018',
+      'catno': 'TDWD 1',
+      'title': 'The Heptones - Better Days',
+      'thumb': 'https://img.discogs.com/Ccy6ZRFW9a-Fyo4x6C7OosVooLw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2710348-1297593036.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/fnLSzT5zpjHBIIMRfUCt5KsvxzM=/fit-in/500x494/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2710348-1297593036.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/369018',
+      'community': {
+        'want': 373,
+        'have': 428
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'genre': [
+        'Reggae'
+      ],
+      'format': [
+        'Vinyl',
+        'LP',
+        'Compilation'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 669910,
+      'label': [
+        'Trench Town',
+        "Harry J's Recording Studio",
+        'The Black Ark',
+        "Harry J's Recording Studio",
+        'The Black Ark'
+      ],
+      'type': 'master',
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 669910,
+      'master_url': 'https://api.discogs.com/masters/669910',
+      'uri': '/master/669910-The-Heptones-Nightfood-Ina-Party-Time',
+      'catno': 'TTLP 0046',
+      'title': 'The Heptones - Nightfood Ina Party Time',
+      'thumb': 'https://img.discogs.com/IxiXFGcFetytv5b8EXjT2AQ8mEM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5538985-1600752172-2633.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/ZsLoQkld7RnVJksHrxd6EtN_47w=/fit-in/600x595/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-5538985-1600752172-2633.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/669910',
+      'community': {
+        'want': 55,
+        'have': 105
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1971',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album'
+      ],
+      'label': [
+        'Studio One'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Roots Reggae'
+      ],
+      'id': 246884,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 246884,
+      'master_url': 'https://api.discogs.com/masters/246884',
+      'uri': '/master/246884-The-Heptones-Freedom-Line',
+      'catno': 'SOL 01111',
+      'title': 'The Heptones - Freedom Line',
+      'thumb': 'https://img.discogs.com/-hzvmxSoGCj1GQT-1ZNrCFtaOOk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2121395-1355738067-6402.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/OylqtfLTdu3krFE5AAEfApMK4XY=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2121395-1355738067-6402.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/246884',
+      'community': {
+        'want': 1059,
+        'have': 359
+      }
+    },
+    {
+      'country': 'Jamaica',
+      'year': '1970',
+      'format': [
+        'Vinyl',
+        'LP',
+        'Album',
+        'Mono'
+      ],
+      'label': [
+        'Studio One',
+        'Jamaica Recording Mfg. Co. Ltd.',
+        'Jamaica Recording Studio'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Rocksteady'
+      ],
+      'id': 707038,
+      'barcode': [
+        'FCD - 7988 A',
+        'FCD - 7988 - B'
+      ],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 707038,
+      'master_url': 'https://api.discogs.com/masters/707038',
+      'uri': '/The-Heptones-Black-Is-Black/master/707038',
+      'catno': 'none',
+      'title': 'The Heptones - Black Is Black',
+      'thumb': 'https://img.discogs.com/JpBhZlQ4ycnbAjrhEmQGALmhMMg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4645177-1458562551-3836.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/l-PCSduQQJgO8dATJCf23JDB1fA=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4645177-1458562551-3836.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/707038',
+      'community': {
+        'want': 1165,
+        'have': 463
+      }
+    },
+    {
+      'country': 'UK',
+      'year': '1980',
+      'format': [
+        'Vinyl',
+        'LP'
+      ],
+      'label': [
+        'Cha Cha',
+        'Cha Cha Music',
+        'Cha Cha Music',
+        'Channel One Recording Studio',
+        'The Black Ark',
+        'Joe Gibbs Studio',
+        'Chalk Farm Studios'
+      ],
+      'type': 'master',
+      'genre': [
+        'Reggae'
+      ],
+      'style': [
+        'Reggae'
+      ],
+      'id': 1544475,
+      'barcode': [],
+      'user_data': {
+        'in_wantlist': False,
+        'in_collection': False
+      },
+      'master_id': 1544475,
+      'master_url': 'https://api.discogs.com/masters/1544475',
+      'uri': '/Alton-Ellis-The-Heptones-Mr-Skabeana/master/1544475',
+      'catno': 'CHALP 009',
+      'title': 'Alton Ellis & The Heptones - Mr Skabeana',
+      'thumb': 'https://img.discogs.com/9-5ia25hqh5N2ablw20rxwOCv9E=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3603306-1337326697-4617.jpeg.jpg',
+      'cover_image': 'https://img.discogs.com/Kb-Atfz4F-Ix97pr5D_tFaMVr_c=/fit-in/350x350/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3603306-1337326697-4617.jpeg.jpg',
+      'resource_url': 'https://api.discogs.com/masters/1544475',
+      'community': {
+        'want': 393,
+        'have': 76
+      }
+    }
+  ]
+}
