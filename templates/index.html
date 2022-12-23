@@ -5,8 +5,7 @@
 </head>
 <body style="margin: 0px; background: #0e0e0e; height: 100%">
 {% block content %}
-    <img src="{{ uri }}" style="background-color: hsl(0, 0%, 90%);transition: background-color 300ms" width="650"
-         height="650">
+    <a href="?artist={{ artist }}"><img src="{{ uri }}" style="background-color: hsl(0, 0%, 90%);transition: background-color 300ms" width="650" height="650"></a>
 {% endblock %}
 </body>
 </html>

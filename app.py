@@ -18,13 +18,14 @@ def index():
 
 @app.route('/')
 def artist():
+    artist = request.args.get('artist')
     response = requests.get(
-        'https://api.discogs.com/database/search?artist=' + request.args.get('artist') + '&type=master&format=LP',
+        'https://api.discogs.com/database/search?artist=' + artist + '&type=master&format=LP',
         headers={'Authorization': 'Discogs token=AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'}
     )
     ix = randrange(len(response.json()['results']))
     image_uri = response.json()['results'][ix]['cover_image']
-    return render_template('index.html', uri=image_uri)
+    return render_template('index.html', artist=artist, uri=image_uri)
 
 
 @app.route('/curl')
