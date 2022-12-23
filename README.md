@@ -8,5 +8,6 @@ Setup:
 - pip3 install discogs-client
 
 How to deploy flask application to Amplify: https://aws.amazon.com/getting-started/hands-on/serve-a-flask-app/
+How to get around request quota limit at Discogs: https://www.discogs.com/forum/thread/732352
 
 example: localhost:5000?artist=pinchers
