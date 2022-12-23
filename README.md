@@ -9,4 +9,4 @@ Setup:
 
 How to deploy flask application to Amplify: https://aws.amazon.com/getting-started/hands-on/serve-a-flask-app/
 
-exempel: localhost:5000?artist
+example: localhost:5000?artist=<artist name>
