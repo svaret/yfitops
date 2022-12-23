@@ -23,7 +23,10 @@ def artist():
         'https://api.discogs.com/database/search?artist=' + artist + '&type=master&format=LP',
         headers={'Authorization': 'Discogs token=AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'}
     )
-    ix = randrange(len(response.json()['results']))
+    number_of_hits = len(response.json()['results'])
+    if number_of_hits == 0:
+        return render_template('artist-not-found.html', artist=artist)
+    ix = randrange(number_of_hits)
     image_uri = response.json()['results'][ix]['cover_image']
     return render_template('index.html', artist=artist, uri=image_uri)
 
