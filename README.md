@@ -18,3 +18,7 @@ How to get around request quota limit at Discogs:
 How to get random album cover for an artist:
 
 - http://localhost:5000?artist=pinchers
+
+Responsive development help:
+
+- https://codepen.io/supergillie/pen/PoBPerJ
