@@ -19,6 +19,6 @@ How to get random album cover for an artist:
 
 - http://localhost:5000?artist=pinchers
 
-Responsive dev page:
+Responsive development help:
 
 - https://codepen.io/supergillie/pen/PoBPerJ

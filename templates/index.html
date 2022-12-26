@@ -9,6 +9,7 @@
     <style>
         html,
         body {
+            background: #0e0e0e;
             width: 100%;
             height: 100%;
             margin: 0;
@@ -25,8 +26,9 @@
 
         .square {
             position: relative;
-            width: 95vmin;
-            border: solid red 5px;
+            /*change line below to get border above record cover*/
+            width: 100vmin;
+            border: solid black 5px;
         }
 
         .square:after {
@@ -49,13 +51,11 @@
         }
     </style>
 
-
     {% block content %}
     <div class="container">
         <div class="square">
             <div class="content">
                 <a href="?artist={{ artist }}"><img src="{{ uri }}"> </a>
-
             </div>
         </div>
     </div>
