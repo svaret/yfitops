@@ -7,6 +7,9 @@ Setup:
 - export PATH=$PATH:/Users/pekr/Library/Python/3.8/bin
 - pip3 install discogs-client
 
+How to deply to pythonanywhere:
+- https://www.youtube.com/watch?v=75-oCKUx3oU
+
 How to deploy flask application to Amplify: 
 - https://aws.amazon.com/getting-started/hands-on/serve-a-flask-app/
 - https://acloudguru.com/blog/engineering/create-a-serverless-python-api-with-aws-amplify-and-flask
