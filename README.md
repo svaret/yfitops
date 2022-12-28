@@ -1,4 +1,4 @@
-<img width="414" alt="Screenshot 2022-12-27 at 21 55 54" src="https://user-images.githubusercontent.com/209369/209721648-0a64f42b-632c-425b-a79d-95b613037e79.png">
+<img width="414" alt="Screenshot 2022-12-27 at 21 55 54" src="https://github.com/svaret/hammar.by/blob/master/images/yfitops.png">
 
 
 
