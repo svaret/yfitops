@@ -27,3 +27,7 @@ How to get random album cover for an artist:
 Responsive development help:
 
 - https://codepen.io/supergillie/pen/PoBPerJ
+
+How to deploy to pythonanywhere from github:
+
+- https://medium.com/@aadibajpai/deploying-to-pythonanywhere-via-github-6f967956e664
