@@ -1,4 +1,6 @@
-<img width="414" alt="Screenshot 2022-12-27 at 21 55 54" src="https://github.com/svaret/hammar.by/blob/master/images/yfitops.png">
+<p align="center">
+  <img width="414" alt="yfitops" src="https://github.com/svaret/hammar.by/blob/master/images/yfitops.png">
+</p>
 
 
 
