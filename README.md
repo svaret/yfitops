@@ -22,7 +22,7 @@ How to get around request quota limit at Discogs:
 
 - https://www.discogs.com/forum/thread/732352
 
-How to get random album cover for an artist:
+How to get random album cover for an artist, exchange "pinchers" for "your" artist:
 
 - http://localhost:5000?artist=pinchers
 
