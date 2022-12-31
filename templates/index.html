@@ -22,7 +22,12 @@
         function showSearchField() {
             $('#titletext').hide();
             $('#txt').show();
-            $('#btn').show();
+        }
+
+        function enterSearch() {
+            if (event.key === 'Enter') {
+                location.href='http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
+            }
         }
     </script>
 </head>
@@ -87,8 +92,13 @@
 -->
                 <div class="search">
                     <td style="text-align: center">
-                        <input id="txt" name="order" type="text" value="{{ title }}" hidden="true">
-                        <input id='btn' type="submit" value="submit" onclick="newSearch()" hidden="true">
+                        <input id="txt"
+                               name="order"
+                               type="text"
+                               value="{{ title }}"
+                               hidden="true"
+                               size="{{ title_length }}"
+                               onkeydown="enterSearch(this)">
                         <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title }}</p>
                     </td>
                 </div>

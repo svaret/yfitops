@@ -32,7 +32,7 @@ def artist():
     image_uri = random_entry['cover_image']
     title = random_entry['title']
     print(random_entry)
-    return render_template('index.html', artist=artist, uri=image_uri, title=title)
+    return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title))
 
 
 @app.route('/curl')
