@@ -3,6 +3,7 @@
 
 <head>
     <meta name="viewport">
+    <script src="jquery-3.6.1.min.js"></script>
     <script>
         window.onload = function () {
             const button = document.getElementById("yfitops");
@@ -12,6 +13,11 @@
                 // e.target is the button element
                 // do stuff with them
             });
+        }
+    </script>
+    <script type="text/javascript">
+        function newSearch() {
+            location.href='http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
         }
     </script>
 </head>
@@ -58,22 +64,30 @@
         button.link { background:none; border:none; color:white; }
     </style>
 
-
     {% block content %}
     <div class="container">
         <table>
             <tr>
-                <td style="text-align: center">
-                    <button id="yfitops" class="link">{{ title }}</button>
-                </td>
+                <div class="title">
+                    <td style="text-align: center">
+                        <button id="yfitops" class="link">{{ title }}</button>
+                    </td>
+                </div>
+                <div class="search">
+                    <td style="text-align: center">
+                        <input id="txt" name="order" type="text" value="{{ title }}">
+                        <input id='btn' type="submit" value="submit"
+                                onclick="newSearch()" >
+                    </td>
+                </div>
             </tr>
             <tr>
                 <td>
-                <div class="square">
-                    <div class="content">
-                        <a href="?artist={{ artist }}"><img src="{{ uri }}"> </a>
+                    <div class="square">
+                        <div class="content">
+                            <a href="?artist={{ artist }}"><img src="{{ uri }}"> </a>
+                        </div>
                     </div>
-                </div>
                 </td>
             </tr>
         </table>
