@@ -3,6 +3,17 @@
 
 <head>
     <meta name="viewport">
+    <script>
+        window.onload = function () {
+            const button = document.getElementById("yfitops");
+            button.addEventListener("click", function (e) {
+                alert("add code to show input field");
+                // e is the event object
+                // e.target is the button element
+                // do stuff with them
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -47,12 +58,13 @@
         button.link { background:none; border:none; color:white; }
     </style>
 
+
     {% block content %}
     <div class="container">
         <table>
             <tr>
                 <td style="text-align: center">
-                    <button class="link">{{ title }}</button>
+                    <button id="yfitops" class="link">{{ title }}</button>
                 </td>
             </tr>
             <tr>
