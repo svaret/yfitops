@@ -28,8 +28,11 @@ def artist():
     number_of_hits = len(response.json()['results'])
     if number_of_hits == 0:
         return render_template('artist-not-found.html', artist=artist)
-    image_uri = response.json()['results'][randrange(number_of_hits)]['cover_image']
-    return render_template('index.html', artist=artist, uri=image_uri)
+    random_entry = response.json()['results'][randrange(number_of_hits)]
+    image_uri = random_entry['cover_image']
+    title = random_entry['title']
+    print(random_entry)
+    return render_template('index.html', artist=artist, uri=image_uri, title=title)
 
 
 @app.route('/curl')
