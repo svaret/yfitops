@@ -6,6 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         window.onload = function () {
+            const element = document.getElementById('txt');
+            element.addEventListener("keypress", (e) => {
+                if (e.key == 'Enter') {
+                    location.href = 'http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
+                }
+            }, false);
             const button = document.getElementById("yfitops");
             button.addEventListener("click", function (e) {
                 alert("add code to show input field");
@@ -13,6 +19,7 @@
                 // e.target is the button element
                 // do stuff with them
             });
+
         }
     </script>
     <script type="text/javascript">
@@ -22,12 +29,6 @@
         function showSearchField() {
             $('#titletext').hide();
             $('#txt').show();
-        }
-
-        function enterSearch() {
-            if (event.key === 'Enter') {
-                location.href='http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
-            }
         }
     </script>
 </head>
@@ -97,8 +98,7 @@
                                type="text"
                                value="{{ title }}"
                                hidden="true"
-                               size="{{ title_length }}"
-                               onkeydown="enterSearch(this)">
+                               size="{{ title_length }}">
                         <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title }}</p>
                     </td>
                 </div>
