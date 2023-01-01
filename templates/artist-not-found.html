@@ -5,7 +5,12 @@
 </head>
 <body style="margin: 0px; background: #0e0e0e; height: 100%">
 {% block content %}
-<p style="background-color:black;color:white;">{{ artist }} not found</p>
+<center>
+<h1 style="background-color:rgb(190, 65, 65);color:white; align-items: center;">{{ artist }} not found</h1>
+<form>
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form>
 {% endblock %}
+</center>
 </body>
 </html>
