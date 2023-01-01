@@ -19,6 +19,7 @@
         function showSearchField() {
             $('#titletext').hide();
             $('#txt').show();
+            $('#txt').select();
         }
     </script>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
@@ -34,13 +35,16 @@
                         <input id="txt"
                                name="order"
                                type="text"
-                               value="{{ title }}"
+                               value=""
                                hidden="true"
-                               size="{{ title_length }}"
+                               size="12"
                                onClick="this.select();">
                         <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title }}</p>
                     </td>
                 </div>
+                
+            
+                
             </tr>
             <tr>
                 <td>
