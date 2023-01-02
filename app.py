@@ -1,10 +1,25 @@
 from random import randrange
 
+from apiclient.discovery import build
+from apiclient.errors import HttpError
+from oauth2client.tools import argparser
+
+import sys
+import os
+import urllib
+
 import discogs_client
 import requests
 from flask import Flask, render_template, request
 
 DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
+YOUTUBE_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
+
+API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
+YOUTUBE_API_SERVICE_NAME = "youtube"
+YOUTUBE_API_VERSION = "v3"
+VIDEOID = ""
+
 
 app = Flask(__name__)
 
@@ -31,8 +46,46 @@ def artist():
     random_entry = response.json()['results'][randrange(number_of_hits)]
     image_uri = random_entry['cover_image']
     title = random_entry['title']
-    print(random_entry)
-    return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title))
+
+    #print(random_entry)
+
+    VIDEOID = getYoutubeid(title)
+
+    return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title), videolink=VIDEOID )
+
+
+def getYoutubeid(title):
+    videos = []
+    videoids = []
+    videoid =""
+
+    youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=API_KEY)
+
+    try:
+        search_response = youtube.search().list(q=title, part="id,snippet", maxResults=1).execute()
+ 
+
+        for search_result in search_response.get("items", []):
+            if search_result["id"]["kind"] == "youtube#video":
+               videos.append("%s (%s)" % (search_result["snippet"]["title"],
+                                       search_result["id"]["videoId"]))
+
+        for video in videos:
+            print (video)
+
+        for search_result in search_response.get("items", []):
+            if search_result["id"]["kind"] == "youtube#video":
+                videoid += ("%s" % (search_result["id"]["videoId"]))
+     
+        print (videoid)
+
+    except:
+        print("FICK EXCEPTION")
+    return videoid
+
+
+
+
 
 
 @app.route('/curl')

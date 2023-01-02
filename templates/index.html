@@ -32,7 +32,7 @@
             <tr>
                 <div class="search">
                     <td style="text-align: center">
-                        <input id="txt"
+                        <input id="txt" 
                                name="order"
                                type="text"
                                value=""
@@ -41,10 +41,7 @@
                                onClick="this.select();">
                         <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title }}</p>
                     </td>
-                </div>
-                
-            
-                
+                </div>            
             </tr>
             <tr>
                 <td>
@@ -56,7 +53,14 @@
                 </td>
             </tr>
         </table>
+
     </div>
+
+
+<div align="center">
+    <iframe src="https://www.youtube.com/embed/{{ videolink }}" width="100" height="44" frameborder="22" allowfullscreen></iframe>
+</div>
+ 
     {% endblock %}
 
 </body>
