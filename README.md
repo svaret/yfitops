@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="414" alt="yfitops" src="https://github.com/svaret/hammar.by/blob/master/images/yfitops.png">
+  <img width="414" alt="yfitops" src="https://github.com/svaret/yfitops/blob/master/static/yfitops.png">
 </p>
 
 
