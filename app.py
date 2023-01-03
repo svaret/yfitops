@@ -41,17 +41,15 @@ def artist():
     random_entry = response.json()['results'][randrange(number_of_hits)]
     image_uri = random_entry['cover_image']
     title = random_entry['title']
-    VIDEOID = getYoutubeid(title)
+    VIDEOID = youtubeid(title)
     return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title),
                            videolink=VIDEOID)
 
 
-def getYoutubeid(title):
-    YOUTUBE_API_SERVICE_NAME = "youtube"
-    YOUTUBE_API_VERSION = "v3"
+def youtubeid(title):
     videos = []
     videoid = ""
-    youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=GOOGLE_API_KEY)
+    youtube = build("youtube", "v3", developerKey=GOOGLE_API_KEY)
     try:
         ### Hämta ut den 1:a träffen på youtube = oftast bästa träffen för aktuell skiva
         search_response = youtube.search().list(q=title, part="id,snippet", maxResults=1).execute()
