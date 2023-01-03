@@ -13,13 +13,8 @@ import requests
 from flask import Flask, render_template, request
 
 DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
-YOUTUBE_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
-
-API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
-YOUTUBE_API_SERVICE_NAME = "youtube"
-YOUTUBE_API_VERSION = "v3"
+GOOGLE_API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
 VIDEOID = ""
-
 
 app = Flask(__name__)
 
@@ -55,37 +50,40 @@ def artist():
 
 
 def getYoutubeid(title):
+
+    YOUTUBE_API_SERVICE_NAME = "youtube"
+    YOUTUBE_API_VERSION = "v3"
+
     videos = []
-    videoids = []
     videoid =""
 
-    youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=API_KEY)
+    youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=GOOGLE_API_KEY)
 
     try:
-        search_response = youtube.search().list(q=title, part="id,snippet", maxResults=1).execute()
- 
 
+    ### Hämta ut den 1:a träffen på youtube = oftast bästa träffen för aktuell skiva    
+        search_response = youtube.search().list(q=title, part="id,snippet", maxResults=1).execute()
+    
+        for search_result in search_response.get("items", []):
+            if search_result["id"]["kind"] == "youtube#video":
+                videoid += ("%s" % (search_result["id"]["videoId"]))
+    
+        print (videoid)
+    ###
+
+
+    ### Ifall man vill ha flera länkar sätt maxResults till mer än 1 ovan och gör något av svaret:
         for search_result in search_response.get("items", []):
             if search_result["id"]["kind"] == "youtube#video":
                videos.append("%s (%s)" % (search_result["snippet"]["title"],
                                        search_result["id"]["videoId"]))
-
         for video in videos:
             print (video)
+    ###
 
-        for search_result in search_response.get("items", []):
-            if search_result["id"]["kind"] == "youtube#video":
-                videoid += ("%s" % (search_result["id"]["videoId"]))
-     
-        print (videoid)
+    except Exception as e: print(e)    
 
-    except:
-        print("FICK EXCEPTION")
     return videoid
-
-
-
-
 
 
 @app.route('/curl')
