@@ -41,9 +41,9 @@ def artist():
     random_entry = response.json()['results'][randrange(number_of_hits)]
     image_uri = random_entry['cover_image']
     title = random_entry['title']
-    VIDEOID = youtubeid(title)
-    return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title),
-                           videolink=VIDEOID)
+    return render_template('index.html', artist=artist,
+                           uri=image_uri, title=title,
+                           title_length=len(title), videolink=(youtubeid(title)))
 
 
 def youtubeid(title):
