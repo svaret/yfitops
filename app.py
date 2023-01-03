@@ -68,7 +68,7 @@ def getYoutubeid(title):
             if search_result["id"]["kind"] == "youtube#video":
                 videoid += ("%s" % (search_result["id"]["videoId"]))
     
-        print (videoid)
+        print ("VIDEOID: " + videoid)
     ###
 
 
@@ -81,7 +81,10 @@ def getYoutubeid(title):
             print (video)
     ###
 
-    except Exception as e: print(e)    
+    except Exception as e: 
+        print(e)    
+        return render_template('error.html', message=e )
+
 
     return videoid
 
