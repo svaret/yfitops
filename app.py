@@ -8,7 +8,6 @@ import sys
 import os
 import urllib
 
-import discogs_client
 import requests
 from flask import Flask, render_template, request
 
@@ -25,35 +24,28 @@ app = Flask(__name__)
 @app.route('/')
 def artist():
     ARTIST = request.args.get('artist')
-    response = requests.get(
-        'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
-        headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
-    )
-    number_of_hits = len(response.json()['results'])
-    if number_of_hits == 0:
-        return render_template('artist-not-found.html', artist=artist)
-    random_entry = response.json()['results'][randrange(number_of_hits)]
-    IMAGE_URI= random_entry['cover_image']
-    TITLE = random_entry['title']
-    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE )
 
+    if 'title' not in request.args:
+        response = requests.get(
+            'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
+            headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
+        )
+        number_of_hits = len(response.json()['results'])
+        if number_of_hits == 0:
+            return render_template('artist-not-found.html', artist=artist)
+        random_entry = response.json()['results'][randrange(number_of_hits)]
+        IMAGE_URI= random_entry['cover_image']
+        TITLE = random_entry['title']
+        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE )
 
-@app.route('/yt')
-def artistAndYT():
-    ARTIST = request.args.get('artist')
-    VIDEOID = request.args.get('title')
-    IMAGE_URI = request.args.get('imageUri')
-    TITLE = request.args.get('title')
- 
-    VIDEOID = youtubeid(TITLE)
-
-    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
+    else:
+        IMAGE_URI = request.args.get('imageUri')
+        TITLE = request.args.get('title')
+        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=youtubeid(TITLE))
 
 
 
 def youtubeid(title):
-    YOUTUBE_API_SERVICE_NAME = "youtube"
-    YOUTUBE_API_VERSION = "v3"
     videos = []
     videoid = ""
     youtube = build("youtube", "v3", developerKey=GOOGLE_API_KEY)
