@@ -22,16 +22,6 @@ ARTIST=""
 
 app = Flask(__name__)
 
-
-@app.route('/discogs-client')
-def index():
-    d = discogs_client.Client('ExampleApplication/0.1',
-                              user_token=DISCOGS_TOKEN)
-    results = d.search(artist='Heptones', type='master', format='LP')
-    albums = results.page(1)
-    return render_template('index.html', uri=albums[1].images[1]['uri'])
-
-
 @app.route('/')
 def artist():
     ARTIST = request.args.get('artist')
@@ -45,13 +35,7 @@ def artist():
     random_entry = response.json()['results'][randrange(number_of_hits)]
     IMAGE_URI= random_entry['cover_image']
     TITLE = random_entry['title']
-
-    #print(random_entry)
-
-    #VIDEOID = getYoutubeid(title)
-
-    
-    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
+    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE )
 
 
 @app.route('/yt')
@@ -61,8 +45,8 @@ def artistAndYT():
     IMAGE_URI = request.args.get('imageUri')
     TITLE = request.args.get('title')
     VIDEOID = youtubeid(TITLE)
-    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
 
+    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
 
 
 
@@ -73,15 +57,15 @@ def youtubeid(title):
     videoid = ""
     youtube = build("youtube", "v3", developerKey=GOOGLE_API_KEY)
     try:
+
         ### Hämta ut den 1:a träffen på youtube = oftast bästa träffen för aktuell skiva
         search_response = youtube.search().list(q=title, part="id,snippet", maxResults=1).execute()
         for search_result in search_response.get("items", []):
             if search_result["id"]["kind"] == "youtube#video":
                 videoid += ("%s" % (search_result["id"]["videoId"]))
-
         print(videoid)
-        ### Ifall man vill ha flera länkar sätt maxResults till mer än 1 ovan och gör något av svaret:
 
+        ### Ifall man vill ha flera länkar sätt maxResults till mer än 1 ovan och gör något av svaret:
         for search_result in search_response.get("items", []):
             if search_result["id"]["kind"] == "youtube#video":
                 videos.append("%s (%s)" % (search_result["snippet"]["title"], search_result["id"]["videoId"]))
@@ -91,17 +75,5 @@ def youtubeid(title):
 
     except Exception as e: 
         print(e)    
-        return render_template('error.html', message=e )
 
     return videoid
-
-
-@app.route('/curl')
-def curl():
-    print(request.args.get('user'))
-    response = requests.get(
-        'https://api.discogs.com/releases/3721310',
-        headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
-    )
-    return render_template('index.html',
-                           uri=[image["uri"] for image in response.json()['images'] if image["type"] == "primary"][0])

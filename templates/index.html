@@ -4,8 +4,10 @@
 <head>
     <meta name="viewport">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
+   
+   <script>
         window.onload = function () {
             const element = document.getElementById('txt');
             element.addEventListener("keypress", (e) => {
@@ -13,9 +15,12 @@
                     location.href = 'http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
                 }
             }, false);
+            $('#ytplayer').hide();
+            $('#ytlink').hide();
         }
-    </script>
-    <script type="text/javascript">
+   </script>
+   
+   <script type="text/javascript">
 
         function showSearchField() {
             $('#titletext').hide();
@@ -43,7 +48,10 @@
                     <td style="text-align: center">
                         <input id="txt" name="order" type="text" value="" hidden="true" size="12"
                             onClick="this.select();">
-                        <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title
+                        <p contenteditable="true" 
+                        id="titletext" 
+                        class="whitetext" 
+                        onclick="showSearchField()">{{ title
                             }}</p>
                     </td>
                 </div>
@@ -52,7 +60,8 @@
                 <td>
                     <div class="square">
                         <div class="content">
-                            <a href="?artist={{ artist }}"><img src="{{ uri }}"> </a>
+                            <a href="?artist={{ artist }}">
+                                <img src="{{ uri }}"> </a>
                         </div>
                     </div>
                 </td>
@@ -63,28 +72,22 @@
     <table align="center">
         <tr>
             <td>
-                <div>
-                    <input type="button" onclick="location.href = 'http://' + window.location.host + '?artist='"
-                        value="completerandom" />
-                </div>
-            </td>
-            <td>
                 <div id="svarven">
                     <input type="button"
-                        onclick="location.href = 'http://' + window.location.host + '/yt?artist= {{ artist }}&title= {{ title }}&imageUri={{ uri }}&videoId={{ videolink }} ';"
+                        onclick="location.href = 'http://'+ window.location.host + '/yt?artist={{ artist }}&title= {{ title }}&imageUri={{ uri }}&videoId={{ videolink }} ';"
                         value="lägg vinylen på svarven" />
                 </div>
             </td>
             <td>
-                <div id="youtubePlayer">
-                    <iframe src="https://www.youtube.com/embed/{{ videolink }}" width="100" height="44" frameborder="22"
+                <div id="ytplayer">
+                    <iframe src="https://www.youtube.com/embed/{{videolink}}" width="100" height="44" frameborder="22"
                         allowfullscreen></iframe>
                 </div>
             </td>
             <td>
-                <div>
+                <div id="ytlink">
                     <input type="button" onclick="location.href='https://www.youtube.com/watch?v={{ videolink }}';"
-                        value="https://www.youtube.com/watch?v= {{ videolink }}" />
+                        value="https://www.youtube.com/watch?v={{ videolink }}" />
                 </div>
             </td>
         </tr>
