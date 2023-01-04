@@ -2,7 +2,9 @@ from random import randrange
 
 import discogs_client
 import requests
+import git
 from flask import Flask, render_template, request
+
 
 DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
 
@@ -44,3 +46,14 @@ def curl():
     )
     return render_template('index.html',
                            uri=[image["uri"] for image in response.json()['images'] if image["type"] == "primary"][0])
+
+
+@app.route('/update_server', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('git@github.com:svaret/yfitops.git')
+        origin = repo.remotes.origin
+        origin.pull()
+        return 'Updated PythonAnywhere successfully', 200
+    else:
+        return 'Wrong event type', 400
