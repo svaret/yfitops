@@ -6,4 +6,5 @@ if [ $? -ne 0 ]; then
 fi
 export FLASK_APP=app
 export FLASK_ENV=development
+pip3 install -r requirements.txt
 flask run
