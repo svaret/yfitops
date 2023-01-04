@@ -44,6 +44,7 @@ def artistAndYT():
     VIDEOID = request.args.get('title')
     IMAGE_URI = request.args.get('imageUri')
     TITLE = request.args.get('title')
+ 
     VIDEOID = youtubeid(TITLE)
 
     return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )

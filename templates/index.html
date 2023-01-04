@@ -15,8 +15,18 @@
                     location.href = 'http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
                 }
             }, false);
-            $('#ytplayer').hide();
-            $('#ytlink').hide();
+
+            var url = document.location.href;
+            if (url.indexOf('videoId') > 0) {
+                $('#svarven').hide();
+                $('#ytplayer').show();
+                $('#ytlink').show();
+            } else {
+                $('#svarven').show();
+                $('#ytplayer').hide();
+                $('#ytlink').hide();
+            }
+            
         }
    </script>
    
@@ -31,7 +41,6 @@
         function svarvKlick() {
             $('#svarven').hide();
             $('#youtubeplayer').show();
-
         }
     </script>
 
@@ -74,7 +83,7 @@
             <td>
                 <div id="svarven">
                     <input type="button"
-                        onclick="location.href = 'http://'+ window.location.host + '/yt?artist={{ artist }}&title= {{ title }}&imageUri={{ uri }}&videoId={{ videolink }} ';"
+                        onclick="location.href = 'http://'+ window.location.host + '/yt?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}';"
                         value="lägg vinylen på svarven" />
                 </div>
             </td>
