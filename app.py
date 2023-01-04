@@ -14,7 +14,11 @@ from flask import Flask, render_template, request
 
 DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
 GOOGLE_API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
+
 VIDEOID = ""
+IMAGE_URI=""
+TITLE=""
+ARTIST=""
 
 app = Flask(__name__)
 
@@ -30,23 +34,34 @@ def index():
 
 @app.route('/')
 def artist():
-    artist = request.args.get('artist')
+    ARTIST = request.args.get('artist')
     response = requests.get(
-        'https://api.discogs.com/database/search?artist=' + artist + '&type=master&format=LP',
+        'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
         headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
     )
     number_of_hits = len(response.json()['results'])
     if number_of_hits == 0:
         return render_template('artist-not-found.html', artist=artist)
     random_entry = response.json()['results'][randrange(number_of_hits)]
-    image_uri = random_entry['cover_image']
-    title = random_entry['title']
+    IMAGE_URI= random_entry['cover_image']
+    TITLE = random_entry['title']
 
     #print(random_entry)
 
-    VIDEOID = getYoutubeid(title)
+    #VIDEOID = getYoutubeid(title)
 
-    return render_template('index.html', artist=artist, uri=image_uri, title=title, title_length=len(title), videolink=VIDEOID )
+    
+    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
+
+
+@app.route('/yt')
+def artistAndYT():
+    ARTIST = request.args.get('artist')
+    VIDEOID = request.args.get('title')
+    IMAGE_URI = request.args.get('imageUri')
+    TITLE = request.args.get('title')
+    VIDEOID = getYoutubeid(TITLE)
+    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
 
 
 def getYoutubeid(title):

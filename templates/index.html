@@ -16,12 +16,21 @@
         }
     </script>
     <script type="text/javascript">
+
         function showSearchField() {
             $('#titletext').hide();
             $('#txt').show();
             $('#txt').select();
         }
+
+        function svarvKlick() {
+            $('#svarven').hide();
+            $('#youtubeplayer').show();
+
+        }
     </script>
+
+
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 </head>
 
@@ -32,16 +41,12 @@
             <tr>
                 <div class="search">
                     <td style="text-align: center">
-                        <input id="txt" 
-                               name="order"
-                               type="text"
-                               value=""
-                               hidden="true"
-                               size="12"
-                               onClick="this.select();">
-                        <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title }}</p>
+                        <input id="txt" name="order" type="text" value="" hidden="true" size="12"
+                            onClick="this.select();">
+                        <p contenteditable="true" id="titletext" class="whitetext" onclick="showSearchField()">{{ title
+                            }}</p>
                     </td>
-                </div>            
+                </div>
             </tr>
             <tr>
                 <td>
@@ -55,17 +60,35 @@
         </table>
 
     </div>
-
-
-    <div align="center">
-        <iframe src="https://www.youtube.com/embed/{{ videolink }}" width="100" height="44" frameborder="22" allowfullscreen></iframe>
-    </div>
-
-    <div align="center">
-        <a href="https://www.youtube.com/watch?v={{ videolink }}">PLAY {{ videolink }}</a>
-    </div>
-
- 
+    <table align="center">
+        <tr>
+            <td>
+                <div>
+                    <input type="button" onclick="location.href = 'http://' + window.location.host + '?artist='"
+                        value="completerandom" />
+                </div>
+            </td>
+            <td>
+                <div id="svarven">
+                    <input type="button"
+                        onclick="location.href = 'http://' + window.location.host + '/yt?artist= {{ artist }}&title= {{ title }}&imageUri={{ uri }}&videoId={{ videolink }} ';"
+                        value="lägg vinylen på svarven" />
+                </div>
+            </td>
+            <td>
+                <div id="youtubePlayer">
+                    <iframe src="https://www.youtube.com/embed/{{ videolink }}" width="100" height="44" frameborder="22"
+                        allowfullscreen></iframe>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" onclick="location.href='https://www.youtube.com/watch?v={{ videolink }}';"
+                        value="https://www.youtube.com/watch?v= {{ videolink }}" />
+                </div>
+            </td>
+        </tr>
+    </table>
     {% endblock %}
 
 </body>
