@@ -60,16 +60,15 @@ def artistAndYT():
     VIDEOID = request.args.get('title')
     IMAGE_URI = request.args.get('imageUri')
     TITLE = request.args.get('title')
-    VIDEOID = getYoutubeid(TITLE)
+    VIDEOID = youtubeid(TITLE)
     return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=VIDEOID )
 
 
-def getYoutubeid(title):
 
-    YOUTUBE_API_SERVICE_NAME = "youtube"
-    YOUTUBE_API_VERSION = "v3"
 
 def youtubeid(title):
+    YOUTUBE_API_SERVICE_NAME = "youtube"
+    YOUTUBE_API_VERSION = "v3"
     videos = []
     videoid = ""
     youtube = build("youtube", "v3", developerKey=GOOGLE_API_KEY)
@@ -93,7 +92,6 @@ def youtubeid(title):
     except Exception as e: 
         print(e)    
         return render_template('error.html', message=e )
-
 
     return videoid
 
