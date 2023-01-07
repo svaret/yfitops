@@ -18,7 +18,8 @@
 
             var url = document.location.href;
             if (url.indexOf('videoId') > 0) {
-                $('#svarven').hide();
+                $('#svarven').remove();
+                $('#ettan').remove();
                 $('#ytplayer').show();
                 $('#ytlink').show();
             } else {
@@ -39,8 +40,10 @@
         }
 
         function svarvKlick() {
-            $('#svarven').hide();
+            $('#svarven').remove();
             $('#youtubeplayer').show();
+            $('#settan').remove();
+            
         }
     </script>
 
@@ -75,25 +78,26 @@
                     </div>
                 </td>
             </tr>
-        </table>
-
-    </div>
-    <table align="center">
+ 
         <tr>
-            <td>
+            
+            <td style="text-align: center" id="ettan">
                 <div id="svarven">
                     <input type="button"
                         onclick="location.href = 'http://'+ window.location.host + '?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}';"
                         value="ladda svarven" />
                 </div>
             </td>
-            <td>
+            <td style="text-align: center">
                 <div id="ytplayer">
                     <iframe src="https://www.youtube.com/embed/{{videolink}}" width="100" height="44" frameborder="22"
                         allowfullscreen></iframe>
                 </div>
             </td>
-            <td>
+        </tr>
+ 
+        <tr>
+            <td style="text-align: center">
                 <div id="ytlink">
                     <input type="button" onclick="location.href='https://www.youtube.com/watch?v={{ videolink }}';"
                         value="https://www.youtube.com/watch?v={{ videolink }}" />
@@ -101,8 +105,8 @@
             </td>
         </tr>
     </table>
+</div>
     {% endblock %}
-
 </body>
 
 </html>
