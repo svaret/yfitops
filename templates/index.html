@@ -12,7 +12,7 @@
             const element = document.getElementById('txt');
             element.addEventListener("keypress", (e) => {
                 if (e.key == 'Enter') {
-                    location.href = 'http://' + window.location.host + '?artist=' + document.getElementById('txt').value;
+                    location.href = 'http://' + window.location.host + '/album-cover?artist=' + document.getElementById('txt').value;
                 }
             }, false);
 
