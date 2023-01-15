@@ -30,29 +30,20 @@ def youtube():
     return render_template('index.html', artist=artist, uri=image_uri, title=title, videolink=youtubeid(title))
 
 
-@app.route('/')
-def artist():
+@app.route('/album-cover')
+def album_cover():
     ARTIST = request.args.get('artist')
-
-    # Sidan är i bildläge
-    if 'title' not in request.args:
-        response = requests.get(
-            'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
-            headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
-        )
-        number_of_hits = len(response.json()['results'])
-        if number_of_hits == 0:
-            return render_template('artist-not-found.html', artist=artist)
-        random_entry = response.json()['results'][randrange(number_of_hits)]
-        IMAGE_URI = random_entry['cover_image']
-        TITLE = random_entry['title']
-        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE)
-
-    # sidan är i musikläge
-    else:
-        IMAGE_URI = request.args.get('imageUri')
-        TITLE = request.args.get('title')
-        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=youtubeid(TITLE))
+    response = requests.get(
+        'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
+        headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
+    )
+    number_of_hits = len(response.json()['results'])
+    if number_of_hits == 0:
+        return render_template('artist-not-found.html', artist=artist)
+    random_entry = response.json()['results'][randrange(number_of_hits)]
+    IMAGE_URI = random_entry['cover_image']
+    TITLE = random_entry['title']
+    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE)
 
 
 def youtubeid(title):
