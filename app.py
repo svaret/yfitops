@@ -1,12 +1,6 @@
 from random import randrange
 
 from apiclient.discovery import build
-from apiclient.errors import HttpError
-from oauth2client.tools import argparser
-
-import sys
-import os
-import urllib
 
 import requests
 from flask import Flask, render_template, request
