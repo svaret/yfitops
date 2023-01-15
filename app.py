@@ -25,7 +25,8 @@ app = Flask(__name__)
 def artist():
     ARTIST = request.args.get('artist')
 
-    if 'title' not in request.args:
+    #Sidan är i bildläge
+    if 'title' not in request.args: 
         response = requests.get(
             'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
             headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
@@ -38,7 +39,8 @@ def artist():
         TITLE = random_entry['title']
         return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE )
 
-    else:
+    #sidan är i musikläge
+    else:   
         IMAGE_URI = request.args.get('imageUri')
         TITLE = request.args.get('title')
         return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=youtubeid(TITLE))

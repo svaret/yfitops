@@ -17,9 +17,12 @@
             }, false);
 
             var url = document.location.href;
+
+            /*Beroende på om sidan laddas i musikläge eller bildläge skall knappar visas eller döljas */
+            /*Om man gjorde en egen endpoint bara för youtubelänkarna krashade sidan (ingen bild mm) Sidan laddades om - ingen singel page?*/          
             if (url.indexOf('videoId') > 0) {
                 $('#svarven').remove();
-                $('#ettan').remove();
+                $('#svarvyta').remove();
                 $('#ytplayer').show();
                 $('#ytlink').show();
             } else {
@@ -39,13 +42,7 @@
             $('#txt').select();
         }
 
-        function svarvKlick() {
-            $('#svarven').remove();
-            $('#youtubeplayer').show();
-            $('#settan').remove();
-            
-        }
-    </script>
+</script>
 
 
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
@@ -79,9 +76,8 @@
                 </td>
             </tr>
  
-        <tr>
-            
-            <td style="text-align: center" id="ettan">
+        <tr>          
+            <td style="text-align: center" id="svarvyta">
                 <div id="svarven">
                     <input type="button"
                         onclick="location.href = 'http://'+ window.location.host + '?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}';"
@@ -95,7 +91,6 @@
                 </div>
             </td>
         </tr>
- 
         <tr>
             <td style="text-align: center">
                 <div id="ytlink">
