@@ -15,18 +15,27 @@ DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
 GOOGLE_API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
 
 VIDEOID = ""
-IMAGE_URI=""
-TITLE=""
-ARTIST=""
+IMAGE_URI = ""
+TITLE = ""
+ARTIST = ""
 
 app = Flask(__name__)
+
+
+@app.route('/youtube')
+def youtube():
+    artist = request.args.get('artist')
+    image_uri = request.args.get('imageUri')
+    title = request.args.get('title')
+    return render_template('index.html', artist=artist, uri=image_uri, title=title, videolink=youtubeid(title))
+
 
 @app.route('/')
 def artist():
     ARTIST = request.args.get('artist')
 
-    #Sidan är i bildläge
-    if 'title' not in request.args: 
+    # Sidan är i bildläge
+    if 'title' not in request.args:
         response = requests.get(
             'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
             headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
@@ -35,16 +44,15 @@ def artist():
         if number_of_hits == 0:
             return render_template('artist-not-found.html', artist=artist)
         random_entry = response.json()['results'][randrange(number_of_hits)]
-        IMAGE_URI= random_entry['cover_image']
+        IMAGE_URI = random_entry['cover_image']
         TITLE = random_entry['title']
-        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE )
+        return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE)
 
-    #sidan är i musikläge
-    else:   
+    # sidan är i musikläge
+    else:
         IMAGE_URI = request.args.get('imageUri')
         TITLE = request.args.get('title')
         return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE, videolink=youtubeid(TITLE))
-
 
 
 def youtubeid(title):
@@ -65,10 +73,10 @@ def youtubeid(title):
             if search_result["id"]["kind"] == "youtube#video":
                 videos.append("%s (%s)" % (search_result["snippet"]["title"], search_result["id"]["videoId"]))
         for video in videos:
-            print (video)
+            print(video)
         ###
 
-    except Exception as e: 
-        print(e)    
+    except Exception as e:
+        print(e)
 
     return videoid
