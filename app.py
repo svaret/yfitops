@@ -14,11 +14,6 @@ from flask import Flask, render_template, request
 DISCOGS_TOKEN = 'AugrlbeikovAiGkBIqufmThyfiuRkyNboopdSFWD'
 GOOGLE_API_KEY = 'AIzaSyBoaF8Iw2iP617qopJSC1N1QtDJiq4_Wk8'
 
-VIDEOID = ""
-IMAGE_URI = ""
-TITLE = ""
-ARTIST = ""
-
 app = Flask(__name__)
 
 
@@ -32,18 +27,16 @@ def youtube():
 
 @app.route('/album-cover')
 def album_cover():
-    ARTIST = request.args.get('artist')
+    artist = request.args.get('artist')
     response = requests.get(
-        'https://api.discogs.com/database/search?artist=' + ARTIST + '&type=master&format=LP',
+        'https://api.discogs.com/database/search?artist=' + artist + '&type=master&format=LP',
         headers={'Authorization': ('Discogs token=%s' % DISCOGS_TOKEN)}
     )
     number_of_hits = len(response.json()['results'])
     if number_of_hits == 0:
         return render_template('artist-not-found.html', artist=artist)
     random_entry = response.json()['results'][randrange(number_of_hits)]
-    IMAGE_URI = random_entry['cover_image']
-    TITLE = random_entry['title']
-    return render_template('index.html', artist=ARTIST, uri=IMAGE_URI, title=TITLE)
+    return render_template('index.html', artist=artist, uri=random_entry['cover_image'], title=random_entry['title'])
 
 
 def youtubeid(title):
