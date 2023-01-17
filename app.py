@@ -13,10 +13,9 @@ app = Flask(__name__)
 
 @app.route('/youtube')
 def youtube():
-    artist = request.args.get('artist')
-    image_uri = request.args.get('imageUri')
-    title = request.args.get('title')
-    return render_template('index.html', artist=artist, uri=image_uri, title=title, videolink=youtubeid(title))
+    return render_template('index.html', artist=(request.args.get('artist')), uri=(request.args.get('imageUri')),
+                           title=(request.args.get('title')),
+                           videolink=youtubeid(request.args.get('title')))
 
 
 @app.route('/album-cover')
