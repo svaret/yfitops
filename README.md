@@ -24,6 +24,11 @@ How to deploy to pythonanywhere from localhost:
   git push -u pythonanywhere master 
 - Read more => https://blog.pythonanywhere.com/87/
 
+How to pull and push from/to github:
+
+- git pull origin master
+- git push origin master
+
 How to deploy to pythonanywhere:
 - https://www.youtube.com/watch?v=75-oCKUx3oU
 
