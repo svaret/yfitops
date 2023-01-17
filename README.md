@@ -30,6 +30,10 @@ Responsive development help:
 
 - https://codepen.io/supergillie/pen/PoBPerJ
 
-How to deploy to pythonanywhere from github:
+How to deploy to pythonanywhere from localhost:
 
-- https://medium.com/@aadibajpai/deploying-to-pythonanywhere-via-github-6f967956e664
+- Add the remote repo @ pythonanywhere: 
+  git remote add pythonanywhere vinylbingo@ssh.pythonanywhere.com:/home/vinylbingo/bare-repos/yfitops.git
+- Push code to pythonanywhere:
+  git push -u pythonanywhere master 
+- Read more => https://blog.pythonanywhere.com/87/
