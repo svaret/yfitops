@@ -23,12 +23,8 @@
             if (url.indexOf('videoId') > 0) {
                 $('#svarven').remove();
                 $('#svarvyta').remove();
-                $('#ytplayer').show();
-                $('#ytlink').show();
             } else {
                 $('#svarven').show();
-                $('#ytplayer').hide();
-                $('#ytlink').hide();
             }
             
         }
@@ -55,15 +51,20 @@
             <tr>
                 <div class="search">
                     <td style="text-align: center">
-                        <input id="txt" name="order" type="text" value="" hidden="true" size="12"
-                            onClick="this.select();">
-                        <p contenteditable="true" 
-                        id="titletext" 
-                        class="whitetext" 
-                        onclick="showSearchField()">{{ title
-                            }}</p>
+                        <div class="whitetext">
+                            {{ title }}
+                        </div>
                     </td>
                 </div>
+            </tr>
+            <tr>
+                <td>
+                    <div id="svarven">
+                        <a href="/youtube?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}'">
+                            <img src="static/youtube.jpeg">
+                        </a>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -75,32 +76,8 @@
                     </div>
                 </td>
             </tr>
- 
-        <tr>          
-            <td style="text-align: center" id="svarvyta">
-                <div id="svarven">
-                    <input type="button"
-                        onclick="location.href = 'http://'+ window.location.host + '/youtube?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}';"
-                        value="ladda svarven" />
-                </div>
-            </td>
-            <td style="text-align: center">
-                <div id="ytplayer">
-                    <iframe src="https://www.youtube.com/embed/{{videolink}}" width="100" height="44" frameborder="22"
-                        allowfullscreen></iframe>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td style="text-align: center">
-                <div id="ytlink">
-                    <input type="button" onclick="location.href='https://www.youtube.com/watch?v={{ videolink }}';"
-                        value="https://www.youtube.com/watch?v={{ videolink }}" />
-                </div>
-            </td>
-        </tr>
-    </table>
-</div>
+        </table>
+    </div>
     {% endblock %}
 </body>
 
