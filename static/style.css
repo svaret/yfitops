@@ -41,25 +41,24 @@ img {
     max-height: 100%;
 }
 
-.whitetext {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8em;
-}
-
 button.link {
     background: none;
     border: none;
     color: white;
 }
 
+.whitetext {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+}
+
 input[type=text], select, textarea {
-    width: 40%;
-    padding: 7px;
+    padding: 0px;
     background-color: white;
-    border-radius: 3px;
-    resize: vertical;
-    font-size: 2.5em;
+    font-size: 1.8em;
+    color: black;
     text-align: center;
-  }
+}
+ 

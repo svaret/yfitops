@@ -17,19 +17,6 @@
             }, false);
 
             var url = document.location.href;
-
-            /*Beroende på om sidan laddas i musikläge eller bildläge skall knappar visas eller döljas */
-            /*Om man gjorde en egen endpoint bara för youtubelänkarna krashade sidan (ingen bild mm) Sidan laddades om - ingen singel page?*/          
-            if (url.indexOf('videoId') > 0) {
-                $('#svarven').remove();
-                $('#svarvyta').remove();
-                $('#ytplayer').show();
-                $('#ytlink').show();
-            } else {
-                $('#svarven').show();
-                $('#ytplayer').hide();
-                $('#ytlink').hide();
-            }
             
         }
    </script>
@@ -53,15 +40,13 @@
     <div class="container">
         <table>
             <tr>
+            </tr>
+            <tr></tr>
+            <tr>
                 <div class="search">
                     <td style="text-align: center">
-                        <input id="txt" name="order" type="text" value="" hidden="true" size="12"
-                            onClick="this.select();">
-                        <p contenteditable="true" 
-                        id="titletext" 
-                        class="whitetext" 
-                        onclick="showSearchField()">{{ title
-                            }}</p>
+                        <input id="txt" name="order" type="text" value="" class="whitetext"   hidden="false" onClick="this.select();">                      
+                        <div contenteditable="true" id="titletext" class="whitetext"  onclick="showSearchField()">{{ title }}</div>
                     </td>
                 </div>
             </tr>
@@ -77,28 +62,33 @@
             </tr>
  
         <tr>          
+            {% if showmode == True %}
             <td style="text-align: center" id="svarvyta">
-                <div id="svarven">
+                <div>
                     <input type="button"
                         onclick="location.href = 'http://'+ window.location.host + '/youtube?artist={{ artist }}&title={{ title }}&imageUri={{ uri }}&videoId={{ videolink }}';"
-                        value="ladda svarven" />
+                        value="ladda spelaren" />
                 </div>
             </td>
+            {% endif %}
+
+            {% if showmode == False %}
             <td style="text-align: center">
-                <div id="ytplayer">
-                    <iframe src="https://www.youtube.com/embed/{{videolink}}" width="100" height="44" frameborder="22"
+                <div>
+                    <iframe src="https://www.youtube.com/embed/{{videolink}}" width="100" height="22" frameborder="0"
                         allowfullscreen></iframe>
                 </div>
             </td>
         </tr>
         <tr>
             <td style="text-align: center">
-                <div id="ytlink">
+                <div>
                     <input type="button" onclick="location.href='https://www.youtube.com/watch?v={{ videolink }}';"
                         value="https://www.youtube.com/watch?v={{ videolink }}" />
                 </div>
             </td>
         </tr>
+        {% endif %}
     </table>
 </div>
     {% endblock %}
