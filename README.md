@@ -11,6 +11,7 @@ Setup:
 How to get random album cover for an artist, exchange "pinchers" for "your" artist:
 
 - http://localhost:5000?artist=pinchers
+- https://localhost:5000/album-cover?artist=pinchers
 
 
 How to pull and push from/to github:
