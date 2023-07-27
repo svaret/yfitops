@@ -19,6 +19,7 @@ How to pull and push from/to github:
 - git push origin master
 
 https://blog.nextideatech.com/deploy-flask-on-aws-heroku/
+https://blog.nextideatech.com/deploy-flask-on-aws-heroku/
 
 
 
